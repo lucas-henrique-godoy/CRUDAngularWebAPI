@@ -4,8 +4,5 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <!-- Remova pacotes que não existem no .NET 3.1 -->
-  </ItemGroup>
 
 </Project>
