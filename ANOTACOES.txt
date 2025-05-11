@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 1º Passo: Criar pasta Models no backend(API) 
 2º Passo: Criar classe model Pessoa e colocar as propriedades que refletirão os dados do banco de dados.
-3º Passo: Criar também dentro de models a classe contexto que serve para criar o  banco de dados
+3º Passo: Criar também dentro de models a classe contexto que serve para criar o  banco de dados.
 4º Passo: 
 5º Passo: 
 6º Passo: 
