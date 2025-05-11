@@ -1,7 +1,6 @@
-🛠️ Tecnologias e Pacotes Instalados
-Node.js
+🛠️ Tecnologias e Pacotes Instalados para o projeto Fullstack
 
-Versão: v12.22.12
+Node.js: Versão: v12.22.12
 
 Angular
 
