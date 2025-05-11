@@ -1,22 +1,14 @@
-🛠️ Tecnologias e Pacotes Instalados para o projeto Fullstack
+🛠️ Tecnologias e Pacotes Instalados para o projeto Fullstack Angular ASP.NET Core
 
-Node.js: Versão: v12.22.12
+Node.js - Versão: v12.22.12
 
-Angular
+Angular - Versão: 10.x (instalada via Angular CLI)
 
-Versão: 10.x (instalada via Angular CLI)
+.NET Core - Versão: 3.1
 
-.NET Core
+Microsoft.EntityFrameworkCore - Versão: 3.1.32
 
-Versão: 3.1
-
-Microsoft.EntityFrameworkCore
-
-Versão: 3.1.32
-
-Microsoft.EntityFrameworkCore.SqlServer
-
-Versão: 3.1.32
+Microsoft.EntityFrameworkCore.SqlServer - Versão: 3.1.32
 
 Microsoft.EntityFrameworkCore.Relational
 
