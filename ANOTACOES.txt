@@ -16,4 +16,11 @@ Microsoft.EntityFrameworkCore.Tools - Versão: 3.1.32
 _________________________________________________________________________________________________________________________________________________________________________
 
 1º Passo: Criar pasta Models no backend(API) 
-2º Passo: Criar classe model Pessoa e colocar as prorpiedades que refletirão os dados do banco de dados.
+2º Passo: Criar classe model Pessoa e colocar as propriedades que refletirão os dados do banco de dados.
+3º Passo: 
+4º Passo: 
+5º Passo: 
+6º Passo: 
+7º Passo: 
+8º Passo: 
+9º Passo: 
