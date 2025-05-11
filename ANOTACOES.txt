@@ -10,10 +10,6 @@ Microsoft.EntityFrameworkCore - Versão: 3.1.32
 
 Microsoft.EntityFrameworkCore.SqlServer - Versão: 3.1.32
 
-Microsoft.EntityFrameworkCore.Relational
+Microsoft.EntityFrameworkCore.Relational - Versão: 3.1.32
 
-Versão: 3.1.32
-
-Microsoft.EntityFrameworkCore.Tools
-
-Versão: 3.1.32
+Microsoft.EntityFrameworkCore.Tools - Versão: 3.1.32
