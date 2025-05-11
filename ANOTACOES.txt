@@ -13,3 +13,6 @@ Microsoft.EntityFrameworkCore.SqlServer - Versão: 3.1.32
 Microsoft.EntityFrameworkCore.Relational - Versão: 3.1.32
 
 Microsoft.EntityFrameworkCore.Tools - Versão: 3.1.32
+_________________________________________________________________________________________________________________________________________________________________________
+
+1ºPasso: Criar pasta Models no backend(API)
