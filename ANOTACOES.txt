@@ -18,8 +18,22 @@ ________________________________________________________________________________
 1º Passo: Criar pasta Models no backend(API) 
 2º Passo: Criar classe model Pessoa e colocar as propriedades que refletirão os dados do banco de dados.
 3º Passo: Criar também dentro de models a classe contexto que serve para criar o  banco de dados.
-4º Passo: 
-5º Passo: 
+4º Passo: Em appsettings.json criar a connection string com o nome do banco.Ex:
+ "ConnectionStrings": {
+    "ConexaoBD" : "Server=(localdb)\\mssqllocaldb;Database=AngWebAPIBD;"
+  }
+
+5º Passo: Em startup.cs o método ConfigureServices faz parte da configuração da aplicação ASP.NET Core, geralmente localizada na classe Startup.cs. Ele é responsável por registrar os serviços que a aplicação irá utilizar, por meio de injeção de dependência. Dentro do método Essa linha registra os **Controllers da aplicação**, permitindo que o ASP.NET Core use o padrão MVC (ou mais especificamente, API Controllers no caso de APIs). Sem essa linha, as rotas de API (`[ApiController]`) não funcionariam. ### Resumo geral: Esse método está configurando:
+1. O **acesso ao banco de dados SQL Server** via Entity Framework (`Contexto`).
+2. O uso de **Controllers**, permitindo que sua aplicação atenda requisições HTTP.
+
+EX:
+ public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(Configuration.GetConnectionString("ConexaoBD")));   
+            services.AddControllers();
+        }
+
 6º Passo: 
 7º Passo: 
 8º Passo: 
