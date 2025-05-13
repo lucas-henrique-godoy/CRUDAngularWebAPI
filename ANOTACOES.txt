@@ -34,7 +34,7 @@ EX:
             services.AddControllers();
         }
 
-6º Passo: Adicionar o migrations(gera o arquivo que terá a configuração do banco de dados)
-7º Passo: 
-8º Passo: 
+6º Passo: Adicionar o migrations(gera o arquivo que terá a configuração do banco de dados) . Comando: dotnet ef migrations add criacaoBD
+7º Passo: Atualizar banco de dados: dotnet ef database upgrade
+8º Passo: Criar controller.
 9º Passo: 
