@@ -27,7 +27,7 @@ namespace CRUDAPI.Controllers
 
          [HttpGet("{PessoaId}")]
          public async Task<ActionResult<Pessoa>> PegarPessoaPeloIdAsync(int pessoaId)
-         {
+        {
             Pessoa pessoa = await _contexto.Pessoas.FindAsync(pessoaId);
 
             if (pessoa == null)
@@ -38,18 +38,21 @@ namespace CRUDAPI.Controllers
             {
                 return pessoa;
             }
-         }
+        }
 
          [HttpPost]
          public async Task<ActionResult<Pessoa>> SalvarPessoaAsync(Pessoa pessoa)
-         {
+        {
             await _contexto.Pessoas.AddAsync(pessoa);
             await _contexto.SaveChangesAsync();
 
             return Ok();
-         }
+        }
 
          [HttpPut]
-         
+         public async Task<ActionResult> AtualizarPessoa()
+        {
+
+        }
     }
 }
