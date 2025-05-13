@@ -34,7 +34,7 @@ EX:
             services.AddControllers();
         }
 
-6º Passo: 
+6º Passo: Adicionar o migrations(gera o arquivo que terá a configuração do banco de dados)
 7º Passo: 
 8º Passo: 
 9º Passo: 
