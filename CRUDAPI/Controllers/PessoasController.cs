@@ -9,23 +9,23 @@ using Microsoft.EntityFrameworkCore;
 namespace CRUDAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]")] //Rota api/pessoas
     public class PessoasController : ControllerBase
     {
-         private readonly Contexto _contexto;
+         private readonly Contexto _contexto;// Representa a conexão com o banco de dados via Entity Framework
 
          public PessoasController(Contexto contexto)
-         {
-            _contexto = contexto;
+         {  
+            _contexto = contexto;       //Injeção de dependência do Contexto
          }
 
-         [HttpGet]
+         [HttpGet] //Acessa a tabela Pessoas e retorna todos os registros como lista (ToListAsync).
          public async Task<ActionResult<IEnumerable<Pessoa>>> PegarTodosAsync()
          {
             return await _contexto.Pessoas.ToListAsync();
          }
 
-         [HttpGet("{PessoaId}")]
+         [HttpGet("{PessoaId}")] //Busca no banco uma pessoa com base no pessoaId.
          public async Task<ActionResult<Pessoa>> PegarPessoaPeloIdAsync(int pessoaId)
         {
             Pessoa pessoa = await _contexto.Pessoas.FindAsync(pessoaId);
@@ -40,7 +40,7 @@ namespace CRUDAPI.Controllers
             }
         }
 
-         [HttpPost]
+         [HttpPost] //Adiciona uma nova pessoa ao banco.
          public async Task<ActionResult<Pessoa>> SalvarPessoaAsync(Pessoa pessoa)
         {
             await _contexto.Pessoas.AddAsync(pessoa);
