@@ -43,13 +43,13 @@ namespace CRUDAPI.Controllers
          [HttpPost] //Adiciona uma nova pessoa ao banco.
          public async Task<ActionResult<Pessoa>> SalvarPessoaAsync(Pessoa pessoa)
         {
-            await _contexto.Pessoas.AddAsync(pessoa);
-            await _contexto.SaveChangesAsync();
+            await _contexto.Pessoas.AddAsync(pessoa);  //AddAsync coloca no contexto de persistência
+            await _contexto.SaveChangesAsync();   //SaveChangesAsync salva no banco.
 
             return Ok();
         }
 
-         [HttpPut]
+         [HttpPut] //Atualiza os dados de uma pessoa, O EF Core compara o ID para saber qual registro atualizar.
          public async Task<ActionResult> AtualizarPessoaAsync(Pessoa pessoa)
         {
             _contexto.Pessoas.Update(pessoa);
@@ -59,7 +59,7 @@ namespace CRUDAPI.Controllers
         }
 
 
-        [HttpDelete("{pessoaId}")]
+        [HttpDelete("{pessoaId}")] //Busca a pessoa pelo ID, Remove do banco com _contexto.Remove(), Salva as mudanças com SaveChangesAsync.
         public async Task<ActionResult> ExcluirPessoaAsync(int pessoaId)
         {
             Pessoa pessoa = await _contexto.Pessoas.FindAsync(pessoaId); //Pega o id da pessoa.
