@@ -64,7 +64,7 @@ namespace CRUDAPI.Controllers
         {
             Pessoa pessoa = await _contexto.Pessoas.FindAsync(pessoaId); //Pega o id da pessoa.
             _contexto.Remove(pessoa); //Excluir a pessoa
-            await _contexto.SaveChangesAsync(); //Persistindo a transaçao no banco de dados.            
+            await _contexto.SaveChangesAsync(); //Persistindo(salvando) a transaçao no banco de dados.            
             return Ok();
         }
     }
