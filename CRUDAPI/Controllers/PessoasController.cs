@@ -34,10 +34,9 @@ namespace CRUDAPI.Controllers
             {
                 return NotFound();
             }
-            else
-            {
-                return pessoa;
-            }
+
+            return pessoa;
+            
         }
 
          [HttpPost] //Adiciona uma nova pessoa ao banco.
