@@ -28,6 +28,7 @@ namespace CRUDAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Contexto>(opcoes => opcoes.UseSqlServer(Configuration.GetConnectionString("ConexaoBD")));
+            services.AddCors(); //Habilitando o CORS.
             services.AddControllers();
         }
 
