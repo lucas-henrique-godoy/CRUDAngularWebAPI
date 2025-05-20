@@ -38,7 +38,7 @@ EX:
 7º Passo: Atualizar banco de dados: dotnet ef database upgrade.
 8º Passo: Criar controllers com os métodos get, get por id, post, put e delete.
 9º Passo: Habilitar o CORS, que permite trocar requisições entre cliente(front-end) e servidor(back-end) no arquivo startup.cs.
-10º Passo:Criar Model e serviço no Angular.
+10º Passo: Criar Model e serviço no Angular.
 11º Passo:
 12º Passo:
 13º Passo:
