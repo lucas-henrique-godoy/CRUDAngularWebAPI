@@ -44,7 +44,7 @@ namespace CRUDAPI
 
             app.UseRouting();
 
-            app.UseCors(opcoes => opcoes.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); //Configurando CORS para aceitar requisições de qualquer origem, qualquer tipo de método, qualquer coisa que esteja no cabeçalho da requisição Http
+            app.UseCors(opcoes => opcoes.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); //Configurando CORS para aceitar requisições de qualquer origem, qualquer tipo de método(get, post,put, delete, patch), qualquer coisa que esteja no cabeçalho(Header) da requisição Http.
 
             app.UseAuthorization();
 
