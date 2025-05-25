@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { PessoasComponent } from './components/pessoas/pessoas.component';
 
 @NgModule({
-  declarations: [AppComponent, PessoasComponent],
+  declarations: [AppComponent, PessoasComponent], //Assim que registramos a rota em app-routing.module o componente é registrdo aqui automaticamente.
   imports: [
     BrowserModule,    
     AppRoutingModule,
