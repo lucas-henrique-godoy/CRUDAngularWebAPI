@@ -11,6 +11,6 @@ const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Htt
   providedIn: 'root'
 })
 export class PessoasService {
-  url
+  url: 'https://lohalhost:5001/api/pessoas';//Essa é a url da nossa api.
   constructor() { }
 }
