@@ -5,19 +5,26 @@ import { Pessoa } from './Pessoa';
 
 const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Http que será enviado, mas somente para aquelas que alteram os dados como: POST,PUT e DELETE. 
   headers: new HttpHeaders({
-    'Content-type' : 'aplication/json' //Tipo de dados que iremos enviar e receber(JSON).
+    'Content-type' : 'application/json' //Tipo de dados que iremos enviar e receber(JSON).
   })
 };
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // Torna esse serviço disponível em toda a aplicação
 })
 export class PessoasService {
-  url: 'https://lohalhost:5001/api/pessoas';  //Essa é a url da nossa api.
+  url = 'https://localhost:5001/api/pessoas';  //Essa é a url da nossa api.
 
   constructor(private http: HttpClient) {}    //Colocar no construtor o  HttpClient para fazer as requisiçoes.
 
   PegarTodos(): Observable<Pessoa[]>{             //PegarTodos retorna um Array(lista) de Pessoas
     return this.http.get<Pessoa[]>(this.url);     // Retornar o que será usado para fazer requisições http(this.http) --> Pegar dados com o get com um array de pesoas(get<Pessoa[]>) --> Depois enviar a url da api
   }
+
+  PegarPeloId(pessoaId: number): Observable<Pessoa>{    //Retorna uma pessoa pelo id, como sera apenas 1 pessoa, não precisa de um array ou lista.
+    const apiUrl = `${this.url}/${pessoaId}`;           //Configurar a url pois será enviado  um id // const apiUrl = `${this.url}/${pessoaId}`; --> Esta modificando a nossa url original para acrescentar um id, ou seja a nossa url  que foi feita la em cima, + o id da pessoa.
+    return this.http.get<Pessoa>(apiUrl);
+  }
+
+  
 }
