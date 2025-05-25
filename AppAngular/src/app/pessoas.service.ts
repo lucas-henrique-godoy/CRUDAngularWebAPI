@@ -34,8 +34,8 @@ export class PessoasService {
     return this.http.put<Pessoa>(this.url, pessoa, httpOptions);  //Retorna o que sera usado para fazer requisiçoes http(this.http) --> Evia dados do tipo Pessoa para serem atualizados usando PUT(return this.http.put<Pessoa>) -- < Depois envia para o seridor a url(this.url) --> os dados que estão na variavel pessoa --> Envia tambem as opções do cabeçalho da nossa requisição http que esta na variavel(httpOptions).  Codigo todo: this.url, pessoa, httOptions
   }
     
-  ExcluirPessoa(pessoaId: number): Observable<any>{ //ExcluirPessoa: Exclui uma pessoa. -->  Eu não vou receber algum formato conhecido do servidor? Não então usa o any(Observable<any>)
-    const apiUrl = `${this.url}/${pessoaId}`;   //Configura a url origina da api para incluir o id da pessoa que será excluída
-    return this.http.delete<number>(apiUrl);    //Retorna o que sera usado para fazer requisiçoes http(this.http). --> Envia ara o servidor o formato do id que sera usadopara ser apagado(delete<number>) --> Envia a url modificada, mas nao  precisa mandar o pessoaId pois ele ja esta indo junto na url da api. --> Envia tambem as opções do cabeçalho da nossa requisição http que esta na variavel(httpOptions).
+  ExcluirPessoa(pessoaId: number): Observable<any>{   //ExcluirPessoa: Exclui uma pessoa. -->  Eu não vou receber algum formato conhecido do servidor? Não então usa o any(Observable<any>)
+    const apiUrl = `${this.url}/${pessoaId}`;         //Configura a url origina da api para incluir o id da pessoa que será excluída
+    return this.http.delete<number>(apiUrl);          //Retorna o que sera usado para fazer requisiçoes http(this.http). --> Envia ara o servidor o formato do id que sera usadopara ser apagado(delete<number>) --> Envia a url modificada, mas nao  precisa mandar o pessoaId pois ele ja esta indo junto na url da api. --> Envia tambem as opções do cabeçalho da nossa requisição http que esta na variavel(httpOptions).
   }
 }
