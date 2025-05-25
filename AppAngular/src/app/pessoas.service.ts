@@ -1,9 +1,16 @@
+import { HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
+const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Http que será enviado, mas somente para aquelas que alteram os dados como: POST,PUT e DELETE. 
+  headers: new HttpHeaders({
+    'Content-type' : 'aplication/json'
+  })
+};
 
 @Injectable({
   providedIn: 'root'
 })
 export class PessoasService {
-
+  url
   constructor() { }
 }
