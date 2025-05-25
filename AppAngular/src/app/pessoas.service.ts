@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Http que será enviado, mas somente para aquelas que alteram os dados como: POST,PUT e DELETE. 
   headers: new HttpHeaders({
-    'Content-type' : 'aplication/json'
+    'Content-type' : 'aplication/json' //Tipo de dados que iremos enviar e receber(JSON).
   })
 };
 
