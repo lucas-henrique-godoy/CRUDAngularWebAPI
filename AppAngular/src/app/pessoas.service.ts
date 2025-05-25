@@ -1,5 +1,7 @@
-import { HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Pessoa } from './Pessoa';
 
 const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Http que será enviado, mas somente para aquelas que alteram os dados como: POST,PUT e DELETE. 
   headers: new HttpHeaders({
@@ -11,6 +13,11 @@ const httpOptions = {    // Aqui é configurado o cabeçalho da requisição Htt
   providedIn: 'root'
 })
 export class PessoasService {
-  url: 'https://lohalhost:5001/api/pessoas';//Essa é a url da nossa api.
-  constructor() { }
+  url: 'https://lohalhost:5001/api/pessoas';  //Essa é a url da nossa api.
+
+  constructor(private http: HttpClient) {}    //Colocar no construtor o  HttpClient para fazer as requisiçoes.
+
+  PegarTodos(): Observable<Pessoa[]>{             //PegarTodos retorna um Array(lista) de Pessoas
+    return this.http.get<Pessoa[]>(this.url);     // Retornar o que será usado para fazer requisições http(this.http) --> Pegar dados com o get com um array de pesoas(get<Pessoa[]>) --> Depois enviar a url da api
+  }
 }

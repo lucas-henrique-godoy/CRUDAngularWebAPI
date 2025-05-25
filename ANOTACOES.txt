@@ -49,3 +49,6 @@ EX:
 18º Passo:
 19º Passo:
 20º Passo:
+
+
+*OBESERVABLE: É um conjunto de dados que fica emitindo notificações de como os dados mudam para o Angular
