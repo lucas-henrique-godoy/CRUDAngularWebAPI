@@ -21,10 +21,8 @@ import { AppComponent } from './app.component';
     ReactiveFormsModule,
     ModalModule.forRoot()//Usando forRoot para registrar o modal  para a aplicaçao inteira.
   ],
-  providers: [
-    // PessoasService aqui só se não usar @Injectable({ providedIn: 'root' }) no serviço.
-    PessoasService
-  ],
+  providers: [HttpClientModule, PessoasService],  //Aqui em providers é registrado que será inicializado via injeção de dependência.              
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
