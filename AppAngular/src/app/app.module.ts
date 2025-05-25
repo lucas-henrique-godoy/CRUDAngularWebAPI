@@ -8,13 +8,12 @@ import {ModalModule} from  'ngx-bootstrap/modal'; //Para mostrar avisos quando f
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PessoasComponent } from './components/pessoas/pessoas.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, PessoasComponent],
   imports: [
-    BrowserModule,    // já inclui CommonModule internamente.
+    BrowserModule,    
     AppRoutingModule,
     CommonModule,
     HttpClientModule,
