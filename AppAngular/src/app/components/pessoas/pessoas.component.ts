@@ -16,7 +16,7 @@ export class PessoasComponent implements OnInit {
 
     this.formulario = new FormGroup({ //FormGroup agrupa os FormControls que são os inputs.
       nome: new FormControl(null),
-      sobrenome: new FormControl(null),  //Essa área serve para dar nomes para os nossos inputs(FormControls).
+      sobrenome: new FormControl(null),  //Essa área serve para dar nomes para os nossos inputs(FormControls) iguais os do model.
       profissao: new FormControl(null)
     })
   }
