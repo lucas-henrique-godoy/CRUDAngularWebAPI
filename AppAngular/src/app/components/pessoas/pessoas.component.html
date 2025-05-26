@@ -4,7 +4,39 @@
             <h6>{{tituloFormluario}}</h6> <!--Exibindo o valor da variável que esta no ts-->
             <hr/>
 
-            <form action=""></form>
+            <form [formGroup]="formulario">   <!--Esta tag <form> está vinculada a um formulário reativo chamado formulario, usando a diretiva [formGroup] do Angular para controlar e validar os campos do formulário com base em um FormGroup definido no TypeScript.-->
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="nome"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Sobrenome</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="sobrenome"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Idade</label>
+                    <input type="number" class="form-control form-control-sm" formControlName="idade"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Profissão</label>
+                    <input type="text" class="form-control form-control-sm" formControlName="profissao"/>
+                </div>
+
+                <!--BOTÕES-->
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <button type="submit" class="btn btn-sm btn-outlinesecondary">Salvar</button>
+                        </div>
+                        <div class="pl-1">
+                            <button type="button" class="btn btn-sm btn-light">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
