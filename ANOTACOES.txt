@@ -40,12 +40,12 @@ EX:
 9º Passo: Habilitar o CORS, que permite trocar requisições entre cliente(front-end) e servidor(back-end) no arquivo startup.cs.
 10º Passo: Criar Model no Angular.
 11º Passo: Criar service no Angular.
-12º Passo:
-13º Passo:
-14º Passo:
-15º Passo:
-16º Passo:
-17º Passo:
+12º Passo: No servisse criar o cabeçalho da requisição http.
+13º Passo: Criar a url da api.
+14º Passo: Criar métodos para fazer requisições http no servisse.
+15º Passo: Criar um novo componente
+16º Passo: Registrar a rota desse componente em app-routing.module.ts
+17º Passo: 
 18º Passo:
 19º Passo:
 20º Passo:
