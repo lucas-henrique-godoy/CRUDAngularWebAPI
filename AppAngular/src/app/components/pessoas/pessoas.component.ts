@@ -14,13 +14,11 @@ export class PessoasComponent implements OnInit {
 
   ngOnInit(): void { //Onde nossos componentes são inicializados.
 
-    this.formulario = new FormGroup({ //FormGroup agrupa os FormControls que são os inputs.
-      
+    this.formulario = new FormGroup({ //FormGroup agrupa os FormControls que são os inputs.      
       nome: new FormControl(null),
       sobrenome: new FormControl(null),  //Essa área serve para dar nomes para os nossos inputs(FormControls) iguais os do model.
+      idade: new FormControl(null),
       profissao: new FormControl(null)
-      
     })
   }
-
 }
