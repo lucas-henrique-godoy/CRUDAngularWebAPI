@@ -1,1 +1,23 @@
-<p>pessoas works!</p>
+<div class="container p-5"> <!--Classe container com padding 5  em todas as direções-->
+    <div class="row">
+        <div class="col-6 border boder-light rouded p-5 shadow" *ngIf="formulario"> <!--Esta <div> Usa classes do Bootstrap, ocupa metade da largura da tela (col-6), tem borda visível (border) com cor clara (border-light), cantos arredondados (rounded), espaçamento interno(padding) grande (p-5) e uma leve sombra (shadow), e só aparece se a variável formulario existir ou for verdadeira (*ngIf="formulario").-->
+            <h6>{{tituloFormluario}}</h6> <!--Exibindo o valor da variável que esta no ts-->
+            <hr/>
+
+            <form action=""></form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  *ngIf="formulario - Siginifica que a div formulario somente sera mostrada se o nosso formulario estiver pronto para ser exibido-->
