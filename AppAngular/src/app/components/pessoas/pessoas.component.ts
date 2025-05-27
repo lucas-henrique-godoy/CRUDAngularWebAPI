@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Pessoa } from 'src/app/Pessoa';
 
 @Component({
   selector: 'app-pessoas',
@@ -20,5 +21,9 @@ export class PessoasComponent implements OnInit {
       idade: new FormControl(null),
       profissao: new FormControl(null)
     })
+  }
+
+  EnviarFormulario(): void {
+    const pessoa: Pessoa = this.formulario.value;
   }
 }

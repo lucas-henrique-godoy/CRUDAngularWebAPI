@@ -5,7 +5,7 @@
             <hr/>
                                     <!--INPUTS-->
 
-            <form [formGroup]="formulario">   <!--Esta tag <form> está vinculada a um formulário reativo chamado formulario, usando a diretiva [formGroup] do Angular para controlar e validar os campos do formulário com base em um FormGroup definido no TypeScript.-->
+            <form [formGroup]="formulario" (ngSubmit)="EnviarFormulario()">   <!--Esta tag <form> está vinculada a um formulário reativo chamado formulario, usando a diretiva [formGroup] do Angular para controlar e validar os campos do formulário com base em um FormGroup definido no TypeScript.-->
                 <div class="form-group">
                     <label>Nome</label>
                     <input type="text" class="form-control form-control-sm" formControlName="nome"/>
