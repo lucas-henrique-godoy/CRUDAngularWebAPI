@@ -44,7 +44,11 @@ EX:
 13º Passo: Criar a url da api.
 14º Passo: Criar métodos para fazer requisições http no servisse.
 15º Passo: Criar um novo componente
-16º Passo: Registrar a rota desse componente em app-routing.module.ts
+16º Passo: Registrar a rota desse componente em app-routing.module.ts. Exemplo: A URL fica: https://localholst:4200/pessoas
+const routes: Routes = [{
+  path: 'pessoas', componente: PessoasComponent
+}]
+
 17º Passo: 
 18º Passo:
 19º Passo:
