@@ -49,7 +49,7 @@ const routes: Routes = [{
   path: 'pessoas', componente: PessoasComponent
 }]
 
-17º Passo: 
+17º Passo: Criar as variáveis que representam o formulário, neste caso formulário: any e tituloFormulario: string.
 18º Passo:
 19º Passo:
 20º Passo:
