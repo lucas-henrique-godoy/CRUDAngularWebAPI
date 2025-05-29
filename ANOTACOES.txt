@@ -55,4 +55,4 @@ const routes: Routes = [{
 20º Passo:
 
 
-*OBESERVABLE: É um conjunto de dados que fica emitindo notificações de como os dados mudam para o Angular
+*OBSERVABLE: É um conjunto de dados que fica emitindo notificações de como os dados mudam para o Angular
