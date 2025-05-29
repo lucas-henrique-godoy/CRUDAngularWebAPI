@@ -3,9 +3,12 @@
     <input formControlName="nome"/>
     <div *ngIf="form.get('nome')?.invalid && form.get('nome')?.touched">Nome é obrigatório.</div>
 
-    <label>mail:</label>
-    <input formControlName="emai"/>
+    <label>Email:</label>
+    <input formControlName="email"/>
     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Emai é obrigatório e deve ser válido.</div>
 
     <label>Idade:</label>
-</form>
+    <input formgControlName="idade" type="number"/>
+
+    <button type="submit" [disabled]="form.invalid">Salvar</button>
+</form> 
