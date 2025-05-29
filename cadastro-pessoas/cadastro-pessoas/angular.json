@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cadastro-pessoas"
+    }
+  },
+  "defaultProject": "cadastro-pessoas",
+  "cli": {
+    "analytics": "d9f1b1d9-0eca-4983-ad32-7ddf005eac24"
+  }
 }
