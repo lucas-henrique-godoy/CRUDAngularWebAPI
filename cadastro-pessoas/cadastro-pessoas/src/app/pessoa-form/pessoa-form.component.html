@@ -1,1 +1,11 @@
-<p>pessoa-form works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>Nome:</label>
+    <input formControlName="nome"/>
+    <div *ngIf="form.get('nome')?.invalid && form.get('nome')?.touched">Nome é obrigatório.</div>
+
+    <label>mail:</label>
+    <input formControlName="emai"/>
+    <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Emai é obrigatório e deve ser válido.</div>
+
+    <label>Idade:</label>
+</form>
