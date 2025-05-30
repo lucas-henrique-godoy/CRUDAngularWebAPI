@@ -28,7 +28,7 @@ export class PessoaService {
 
    update(pessoa: Pessoa): void {
     const index = this.pessoas.findIndex(p => p.id === pessoa.id);
-    if(index !== 1){
+    if(index !== -1){
       this.pessoas[index] = pessoa;
       this.save();
     }

@@ -18,12 +18,12 @@ export class PessoaFormComponent implements OnInit {
     this.form = this.fb.group({
       id: [this.pessoa?.id],
       nome: [this.pessoa?.nome || '',Validators.required],
-      emsil: [this.pessoa?.email || '', [Validators.required, Validators.email]],
+      email: [this.pessoa?.email || '', [Validators.required, Validators.email]],
       idade: [this.pessoa?.idade ?? '', [Validators.min(0)]] 
     });
   }
 
-  onSubmit() {
+  onSubmit(): void {
     if(this.form.valid) {
       this.salvar.emit(this.form.value)
       this.form.reset();

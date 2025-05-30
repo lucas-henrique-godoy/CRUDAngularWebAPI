@@ -8,7 +8,7 @@
     <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched">Emai é obrigatório e deve ser válido.</div>
 
     <label>Idade:</label>
-    <input formgControlName="idade" type="number"/>
+    <input formControlName="idade" type="number"/>
 
     <button type="submit" [disabled]="form.invalid">Salvar</button>
 </form> 
