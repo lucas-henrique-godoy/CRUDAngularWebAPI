@@ -14,7 +14,8 @@ import { PessoaFormComponent } from './pessoa-form/pessoa-form.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

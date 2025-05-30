@@ -1,1 +1,23 @@
-<p>pessoas works!</p>
+<app-pessoa-form [pessoa]="pessoaEditando" (salvar)="salvarPessoa($event)"></app-pessoa-form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Idade</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pessoa of pessoas">
+      <td>{{ pessoa.nome }}</td>
+      <td>{{ pessoa.email }}</td>
+      <td>{{ pessoa.idade }}</td>
+      <td>
+        <button (click)="editar(pessoa)">Editar</button>
+        <button (click)="excluir(pessoa.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

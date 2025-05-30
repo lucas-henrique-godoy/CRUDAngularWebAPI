@@ -1,5 +1,5 @@
 import { Component,EventEmitter,Input, OnInit,Output } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Pessoa } from '../Model/pessoa.model';
 
 @Component({
@@ -10,9 +10,9 @@ import { Pessoa } from '../Model/pessoa.model';
 export class PessoaFormComponent implements OnInit {
   @Input() pessoa: Pessoa | null = null;
   @Output() salvar = new EventEmitter<Pessoa>();
-  form!: FormGroup;
+  form!: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
