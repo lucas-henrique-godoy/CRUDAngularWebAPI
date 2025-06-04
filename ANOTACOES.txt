@@ -13,6 +13,16 @@ Microsoft.EntityFrameworkCore.SqlServer - Versão: 3.1.32
 Microsoft.EntityFrameworkCore.Relational - Versão: 3.1.32
 
 Microsoft.EntityFrameworkCore.Tools - Versão: 3.1.32
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+#Criar projeto de API no dotnet: dotnet new webapi -n nomeDoProjeto
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Instalar bibliotecas no dotnet: 
+1- donet add package Microsoft.EntityFreameworkCore
+2- donet add package Microsoft.EntityFreameworkCore.Relational
+3- donet add package Microsoft.EntityFreameworkCore.Tools
+4- donet add package Microsoft.EntityFreameworkCore.SqlServer
 _______________________________________________________________________________________________________________________________________________________________________
 
 1º Passo: Criar pasta Models no backend(API) 
