@@ -13,7 +13,7 @@ Microsoft.EntityFrameworkCore.SqlServer - Versão: 3.1.32
 Microsoft.EntityFrameworkCore.Relational - Versão: 3.1.32
 
 Microsoft.EntityFrameworkCore.Tools - Versão: 3.1.32
-_________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
 
 1º Passo: Criar pasta Models no backend(API) 
 2º Passo: Criar classe model Pessoa e colocar as propriedades que refletirão os dados do banco de dados.
