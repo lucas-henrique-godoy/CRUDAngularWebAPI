@@ -23,6 +23,10 @@ ________________________________________________________________________________
 2- donet add package Microsoft.EntityFreameworkCore.Relational
 3- donet add package Microsoft.EntityFreameworkCore.Tools
 4- donet add package Microsoft.EntityFreameworkCore.SqlServer
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Criar projeto Angular: ng new nomeProjeto
+1-Instalar Bootstrap: npm add ngx-bootstrap
 _______________________________________________________________________________________________________________________________________________________________________
 
 1º Passo: Criar pasta Models no backend(API) 
